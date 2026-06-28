@@ -20,9 +20,9 @@ export const projects = [
     category: 'AI / Heritage',
     status: 'Research prototype',
     tags: ['Digital heritage', 'Computer vision', 'Archives'],
-    github: '',
+    github: 'https://github.com/ronterrence/digital-benin-bloom',
     linkedin: '',
-    demo: '',
+    demo: 'https://github.com/ronterrence/digital-benin-bloom',
     description: 'A project for comparing archival images, museum records, and visual references to support artifact research and cultural memory.'
   },
   {
@@ -52,17 +52,17 @@ export const projects = [
     description: 'A yellow-pages-style alumni platform with profiles, set admins, membership approval, job board, mentorship, and group-level CMS features.'
   },
   {
-    name: 'Bring Back Integrity',
-    slug: 'bring-back-integrity',
-    initials: 'BI',
-    tagline: 'A civic narrative campaign focused on integrity, accountability, and cultural change.',
+    name: 'News app',
+    slug: 'Your personal news app',
+    initials: 'NA',
+    tagline: 'World news snapshot.',
     category: 'Civic / Storytelling',
     status: 'Ongoing campaign',
-    tags: ['Governance', 'Narrative', 'Africa', 'Campaign'],
+    tags: ['Governance', 'Narrative', 'News', 'Campaign'],
     github: '',
     linkedin: '',
-    demo: '',
-    description: 'A social and visual campaign exploring governance, corruption, identity, systemic traps, and the cultural foundations of public integrity.'
+    demo: 'https://news-app-react-amber.vercel.app/',
+    description: 'This application could assist you with summary news from many continents.'
   },
 
 ];
