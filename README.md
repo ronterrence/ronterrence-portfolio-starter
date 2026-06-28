@@ -33,5 +33,5 @@ Replace the placeholder GitHub, LinkedIn, demo links, project descriptions, cate
 You will get a free URL like:
 
 ```text
-https://your-project-name.vercel.app
+https://ronterrenceportfolio.vercel.app
 ```
