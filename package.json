@@ -4,9 +4,13 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "sync:github": "node scripts/sync-github-projects.mjs",
+    "predev": "npm run sync:github",
     "dev": "vite",
+    "prebuild": "npm run sync:github",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test"
   },
   "dependencies": {
     "lucide-react": "1.18.0",
