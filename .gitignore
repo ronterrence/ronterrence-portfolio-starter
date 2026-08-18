@@ -26,14 +26,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Python
-.venv/
-__pycache__/
-*.py[cod]
-
 # Misc
 .cache/
 coverage/
+.venv
 
-# Nested local copy
+# Accidental nested checkout retained locally for recovery
 ronterrence-portfolio-starter/
