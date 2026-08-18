@@ -123,7 +123,7 @@ function Projects() {
       <div className="section-heading">
         <p className="eyebrow">Selected work</p>
         <h2>Projects</h2>
-        <p>Replace these sample entries with your GitHub links, LinkedIn posts, screenshots, live demos, and case studies.</p>
+        <p>Explore current products, research platforms, prototypes, and experiments backed by their source repositories.</p>
       </div>
 
       <div className="filters">
