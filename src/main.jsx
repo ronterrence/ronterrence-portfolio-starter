@@ -30,22 +30,6 @@ function GitHubIcon({ size }) {
   );
 }
 
-function Header() {
-  return (
-    <header className="site-header">
-      <a className="brand" href="#top" aria-label="Home">
-        <span className="brand-mark">RU</span>
-        <span>Ronterrence Projects</span>
-      </a>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-  );
-}
-
 function Hero() {
   return (
     <section className="hero" id="top">

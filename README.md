@@ -45,5 +45,5 @@ If GitHub is temporarily unavailable, the build retains the last generated snaps
 You will get a free URL like:
 
 ```text
-https://ronterrenceportfolio.vercel.app
+https://ronterrence-ronterrence-portfolio-s.vercel.app
 ```

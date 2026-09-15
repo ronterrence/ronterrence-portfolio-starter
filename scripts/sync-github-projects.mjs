@@ -25,6 +25,10 @@ export async function isHealthyDemo(url, fetchImpl = fetch, timeoutMs = 6000) {
     const probeUrl = parsedUrl.hostname.endsWith('.streamlit.app') ? parsedUrl.href : url;
     const head = await requestWithTimeout(fetchImpl, probeUrl, { method: 'HEAD', redirect: 'follow' }, timeoutMs);
     if (head.ok) return true;
+    if (parsedUrl.hostname.endsWith('.streamlit.app') && head.status === 404) {
+      const canonical = await requestWithTimeout(fetchImpl, url, { method: 'HEAD', redirect: 'manual' }, timeoutMs);
+      return canonical.status >= 300 && canonical.status < 400;
+    }
     if (head.status !== 405) return false;
 
     const get = await requestWithTimeout(fetchImpl, probeUrl, { method: 'GET', redirect: 'follow' }, timeoutMs);

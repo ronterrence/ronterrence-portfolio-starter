@@ -52,6 +52,7 @@
       "Africa"
     ],
     "description": "Route54 turns a structured aviation research database into country explorers, opportunity and risk matrices, product-market views, and an analyst review workflow.",
+    "demoUrl": "https://route54.streamlit.app",
     "repositories": [
       {
         "name": "route54",
@@ -70,7 +71,7 @@
         "archived": false
       }
     ],
-    "demo": "",
+    "demo": "https://route54.streamlit.app",
     "languages": [
       "Python",
       "HTML"
@@ -163,6 +164,7 @@
       "Python"
     ],
     "description": "NLP Atelier brings Hugging Face translation, sentiment scoring, normalized embeddings, visualization, and CSV export into one focused experimentation interface.",
+    "demoUrl": "https://sentiment.streamlit.app",
     "repositories": [
       {
         "name": "sentiment",
@@ -173,7 +175,7 @@
         "archived": false
       }
     ],
-    "demo": "",
+    "demo": "https://sentiment.streamlit.app",
     "languages": [
       "Python"
     ],
