@@ -59,6 +59,28 @@ test('omits a card when all configured repositories are missing', async () => {
   assert.equal(warnings.length, 2);
 });
 
+test('checks Streamlit through its public embed view and preserves the demo link', async () => {
+  const demoUrl = 'https://example.streamlit.app';
+  const catalog = [{ name: 'Example', demoUrl, repositories: [{ name: 'example', label: 'Application' }] }];
+  const repositories = [{ name: 'example', html_url: 'https://github.test/example' }];
+  const [project] = await buildProjects({ catalog, repositories, fetchImpl: async (url) => {
+    assert.equal(url, `${demoUrl}/?embed=true`);
+    return response(200);
+  } });
+  assert.equal(project.demo, demoUrl);
+});
+
+test('validates an explicit demo URL when GitHub has no homepage', async () => {
+  const catalog = [{ name: 'Conti', slug: 'conti', demoUrl: 'https://conti.test', repositories: [{ name: 'conti', label: 'Application' }] }];
+  const repositories = [{ name: 'conti', html_url: 'https://github.test/conti', homepage: '' }];
+  const requested = [];
+  const [project] = await buildProjects({ catalog, repositories, fetchImpl: async (url) => { requested.push(url); return response(200); } });
+  assert.equal(project.demo, 'https://conti.test');
+  assert.deepEqual(requested, ['https://conti.test']);
+  const [unhealthy] = await buildProjects({ catalog, repositories, fetchImpl: async () => response(404), warn: () => {} });
+  assert.equal(unhealthy.demo, '');
+});
+
 test('offline projects retain deterministic source links without unverified demos', () => {
   const catalog = [{ name: 'Offline', slug: 'offline', repositories: [{ name: 'offline', label: 'Source' }] }];
   const [project] = buildOfflineProjects(catalog, 'owner');
