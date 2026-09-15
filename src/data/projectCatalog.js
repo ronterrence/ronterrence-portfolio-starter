@@ -91,5 +91,17 @@ export const projectCatalog = [
     description: 'Sporty separates its guidance model, JSON data, age-selection service, and terminal rendering into a compact, testable command-line application.',
     demoUrl: 'https://sporty-wwxjsyjueqf4rcmxxwtz7t.streamlit.app',
     repositories: [{ name: 'sporty', label: 'CLI application' }]
+  },
+  {
+    name: 'Companion Studio',
+    slug: 'companion-studio',
+    initials: 'CS',
+    tagline: 'A local-first AI companion desktop app with consent-controlled memory and safety boundaries.',
+    category: 'AI / Desktop',
+    status: 'Live demo',
+    tags: ['React', 'TypeScript', 'Tauri', 'SQLite', 'AI safety'],
+    description: 'Companion Studio is a desktop-first, local-first AI companion foundation with governed cloud routing, consent-controlled memory, encrypted export and import, managed local models, and explicit safety boundaries.',
+    demoUrl: 'https://companion-studio-six.vercel.app',
+    repositories: [{ name: 'companion', label: 'Application' }]
   }
 ];

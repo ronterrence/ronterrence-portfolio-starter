@@ -246,5 +246,38 @@
     ],
     "updatedAt": "2026-09-15T02:04:49Z",
     "archived": false
+  },
+  {
+    "name": "Companion Studio",
+    "slug": "companion-studio",
+    "initials": "CS",
+    "tagline": "A local-first AI companion desktop app with consent-controlled memory and safety boundaries.",
+    "category": "AI / Desktop",
+    "status": "Live demo",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Tauri",
+      "SQLite",
+      "AI safety"
+    ],
+    "description": "Companion Studio is a desktop-first, local-first AI companion foundation with governed cloud routing, consent-controlled memory, encrypted export and import, managed local models, and explicit safety boundaries.",
+    "demoUrl": "https://companion-studio-six.vercel.app",
+    "repositories": [
+      {
+        "name": "companion",
+        "label": "Application",
+        "url": "https://github.com/ronterrence/companion",
+        "language": "TypeScript",
+        "updatedAt": "2026-09-15T03:47:53Z",
+        "archived": false
+      }
+    ],
+    "demo": "https://companion-studio-six.vercel.app",
+    "languages": [
+      "TypeScript"
+    ],
+    "updatedAt": "2026-09-15T03:47:53Z",
+    "archived": false
   }
 ]
