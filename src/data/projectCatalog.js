@@ -53,6 +53,7 @@ export const projectCatalog = [
     status: 'Working prototype',
     tags: ['React', 'AI', 'Fact checking', 'Media literacy'],
     description: 'A browser-based fact-checking project that explores clearer evidence review and AI-assisted claim evaluation. The source is public; a demo will appear when a healthy deployment is published.',
+    demoUrl: 'https://factchecker-8i24.onrender.com',
     repositories: [{ name: 'factchecker', label: 'Application' }]
   },
   {

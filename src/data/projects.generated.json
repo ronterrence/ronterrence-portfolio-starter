@@ -133,21 +133,22 @@
       "Media literacy"
     ],
     "description": "A browser-based fact-checking project that explores clearer evidence review and AI-assisted claim evaluation. The source is public; a demo will appear when a healthy deployment is published.",
+    "demoUrl": "https://factchecker-8i24.onrender.com",
     "repositories": [
       {
         "name": "factchecker",
         "label": "Application",
         "url": "https://github.com/ronterrence/factchecker",
         "language": "JavaScript",
-        "updatedAt": "2026-07-22T15:12:25Z",
+        "updatedAt": "2026-09-15T02:38:20Z",
         "archived": false
       }
     ],
-    "demo": "",
+    "demo": "https://factchecker-8i24.onrender.com",
     "languages": [
       "JavaScript"
     ],
-    "updatedAt": "2026-07-22T15:12:25Z",
+    "updatedAt": "2026-09-15T02:38:20Z",
     "archived": false
   },
   {
