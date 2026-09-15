@@ -66,15 +66,16 @@ export const projectCatalog = [
     repositories: [{ name: 'sentiment', label: 'Application' }]
   },
   {
-    name: 'African Penguin Geospatial Platform',
-    slug: 'african-penguin-geospatial-platform',
-    initials: 'AP',
-    tagline: 'A normalized conservation-data pipeline for African penguin research and mapping.',
-    category: 'Data / Conservation',
-    status: 'Data platform',
-    tags: ['Geospatial', 'SQLite', 'Conservation', 'Python'],
-    description: 'A reproducible ingestion and export platform combining occurrence, colony, environmental, fishing-pressure, and protected-area data for African penguin research.',
-    repositories: [{ name: 'Penguin_pro', label: 'Data platform' }]
+    name: 'Conti',
+    slug: 'conti',
+    initials: 'CO',
+    tagline: 'An interactive explorer for comparing the areas of the seven continents.',
+    category: 'Data / Geography',
+    status: 'Live demo',
+    tags: ['Streamlit', 'GeoPandas', 'Geospatial', 'Python'],
+    description: 'Conti uses Natural Earth geographic data to explore continental areas through Equal Earth maps, size ratios, and same-scale comparisons. View continents side by side or overlaid at a shared center, with area estimates calculated on the WGS-84 ellipsoid.',
+    demoUrl: 'https://ronterrence-conti-app-e3ktm6.streamlit.app',
+    repositories: [{ name: 'conti', label: 'Application' }]
   },
   {
     name: 'Sporty',

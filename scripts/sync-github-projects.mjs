@@ -18,11 +18,16 @@ export async function isHealthyDemo(url, fetchImpl = fetch, timeoutMs = 6000) {
   if (!url) return false;
 
   try {
-    const head = await requestWithTimeout(fetchImpl, url, { method: 'HEAD', redirect: 'follow' }, timeoutMs);
+    // Streamlit's normal entry point uses a cookie-based authentication redirect.
+    // Probe the public embed view, while retaining the original link on the card.
+    const parsedUrl = new URL(url);
+    if (parsedUrl.hostname.endsWith('.streamlit.app')) parsedUrl.searchParams.set('embed', 'true');
+    const probeUrl = parsedUrl.hostname.endsWith('.streamlit.app') ? parsedUrl.href : url;
+    const head = await requestWithTimeout(fetchImpl, probeUrl, { method: 'HEAD', redirect: 'follow' }, timeoutMs);
     if (head.ok) return true;
     if (head.status !== 405) return false;
 
-    const get = await requestWithTimeout(fetchImpl, url, { method: 'GET', redirect: 'follow' }, timeoutMs);
+    const get = await requestWithTimeout(fetchImpl, probeUrl, { method: 'GET', redirect: 'follow' }, timeoutMs);
     return get.ok;
   } catch {
     return false;
@@ -67,13 +72,13 @@ export async function buildProjects({ catalog = projectCatalog, owner = githubOw
     }
 
     const configuredNames = new Set(project.repositories.map(({ name }) => name.toLowerCase()));
-    const candidates = repositories
+    const candidates = [project.demoUrl, ...repositories
       .filter(({ name }) => configuredNames.has(name.toLowerCase()))
       .flatMap((repository) => {
         const homepage = repository.homepage?.trim();
         if (homepage) return [homepage];
         return repository.has_pages ? [githubPagesUrl(owner, repository.name)] : [];
-      });
+      })].filter(Boolean);
 
     let demo = '';
     for (const candidate of [...new Set(candidates)]) {

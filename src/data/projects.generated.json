@@ -181,34 +181,35 @@
     "archived": false
   },
   {
-    "name": "African Penguin Geospatial Platform",
-    "slug": "african-penguin-geospatial-platform",
-    "initials": "AP",
-    "tagline": "A normalized conservation-data pipeline for African penguin research and mapping.",
-    "category": "Data / Conservation",
-    "status": "Data platform",
+    "name": "Conti",
+    "slug": "conti",
+    "initials": "CO",
+    "tagline": "An interactive explorer for comparing the areas of the seven continents.",
+    "category": "Data / Geography",
+    "status": "Live demo",
     "tags": [
+      "Streamlit",
+      "GeoPandas",
       "Geospatial",
-      "SQLite",
-      "Conservation",
       "Python"
     ],
-    "description": "A reproducible ingestion and export platform combining occurrence, colony, environmental, fishing-pressure, and protected-area data for African penguin research.",
+    "description": "Conti uses Natural Earth geographic data to explore continental areas through Equal Earth maps, size ratios, and same-scale comparisons. View continents side by side or overlaid at a shared center, with area estimates calculated on the WGS-84 ellipsoid.",
+    "demoUrl": "https://ronterrence-conti-app-e3ktm6.streamlit.app",
     "repositories": [
       {
-        "name": "Penguin_pro",
-        "label": "Data platform",
-        "url": "https://github.com/ronterrence/Penguin_pro",
-        "language": "Jupyter Notebook",
-        "updatedAt": "2026-06-12T11:11:13Z",
+        "name": "conti",
+        "label": "Application",
+        "url": "https://github.com/ronterrence/conti",
+        "language": "Python",
+        "updatedAt": "2026-09-10T12:01:52Z",
         "archived": false
       }
     ],
-    "demo": "",
+    "demo": "https://ronterrence-conti-app-e3ktm6.streamlit.app",
     "languages": [
-      "Jupyter Notebook"
+      "Python"
     ],
-    "updatedAt": "2026-06-12T11:11:13Z",
+    "updatedAt": "2026-09-10T12:01:52Z",
     "archived": false
   },
   {

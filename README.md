@@ -19,6 +19,8 @@ src/data/projectCatalog.js
 
 The catalog controls project names, descriptions, categories, tags, ordering, and repository grouping. GitHub controls repository URLs, languages, update dates, archive status, and demo candidates.
 
+Set an optional `demoUrl` in a catalog entry to prioritize a live demo that is not configured as the repository homepage. Explicit demo URLs use the same health checks as GitHub demo candidates.
+
 Refresh the generated project snapshot with:
 
 ```bash
