@@ -24,6 +24,7 @@ export const projectCatalog = [
     status: 'Prototype',
     tags: ['Streamlit', 'Aviation', 'Research', 'Africa'],
     description: 'Route54 turns a structured aviation research database into country explorers, opportunity and risk matrices, product-market views, and an analyst review workflow.',
+    demoUrl: 'https://route54.streamlit.app',
     repositories: [
       { name: 'route54', label: 'Dashboard' },
       { name: 'terre54_landing', label: 'Landing page' }
@@ -63,6 +64,7 @@ export const projectCatalog = [
     status: 'Local application',
     tags: ['Streamlit', 'Transformers', 'BERT', 'Python'],
     description: 'NLP Atelier brings Hugging Face translation, sentiment scoring, normalized embeddings, visualization, and CSV export into one focused experimentation interface.',
+    demoUrl: 'https://sentiment.streamlit.app',
     repositories: [{ name: 'sentiment', label: 'Application' }]
   },
   {
