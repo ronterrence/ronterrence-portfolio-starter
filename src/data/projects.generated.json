@@ -228,21 +228,22 @@
       "Nutrition"
     ],
     "description": "Sporty separates its guidance model, JSON data, age-selection service, and terminal rendering into a compact, testable command-line application.",
+    "demoUrl": "https://sporty-wwxjsyjueqf4rcmxxwtz7t.streamlit.app",
     "repositories": [
       {
         "name": "sporty",
         "label": "CLI application",
         "url": "https://github.com/ronterrence/sporty",
         "language": "Python",
-        "updatedAt": "2026-06-12T14:00:51Z",
+        "updatedAt": "2026-09-15T02:04:49Z",
         "archived": false
       }
     ],
-    "demo": "",
+    "demo": "https://sporty-wwxjsyjueqf4rcmxxwtz7t.streamlit.app",
     "languages": [
       "Python"
     ],
-    "updatedAt": "2026-06-12T14:00:51Z",
+    "updatedAt": "2026-09-15T02:04:49Z",
     "archived": false
   }
 ]

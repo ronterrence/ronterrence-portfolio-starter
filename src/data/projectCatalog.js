@@ -88,6 +88,7 @@ export const projectCatalog = [
     status: 'CLI application',
     tags: ['Python', 'CLI', 'Unit tests', 'Nutrition'],
     description: 'Sporty separates its guidance model, JSON data, age-selection service, and terminal rendering into a compact, testable command-line application.',
+    demoUrl: 'https://sporty-wwxjsyjueqf4rcmxxwtz7t.streamlit.app',
     repositories: [{ name: 'sporty', label: 'CLI application' }]
   }
 ];
